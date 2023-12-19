@@ -15,16 +15,15 @@ contract ScompVesting is Ownable {
     uint256 public constant INTERVAL = 30 days;
 
     struct VestingSchedule {
-        uint256 totalTokens; // Total tokens to be vested
-        uint16 initialUnlock; // Percentage of tokens to be unlocked initially
-        uint16 tokensPerInterval; // Percentage of tokens to be unlocked per interval
-        uint8 startDelay; // In months
-        uint8 totalIntervals; // In months
+        uint256 totalTokens;
+        uint16 initialUnlock;
+        uint16 tokensPerInterval;
+        uint8 startDelay;
+        uint8 totalIntervals;
     }
 
     mapping(uint8 => VestingSchedule) public vestingSchedules;
 
-    // record of claimed tokens for each address for each vesting schedule.
     mapping(address => mapping(uint8 => uint256)) public claimed;
 
     event Claimed(
@@ -41,67 +40,67 @@ contract ScompVesting is Ownable {
 
         uint256 decimals = 10 ** uint256(scomp.decimals());
         vestingSchedules[0] = VestingSchedule(
-            12000000 * decimals, // 12,000,000 tokens
-            1500, // 15% initial unlock
-            607, // ~6.07% monthly distribution
-            0, // 0 months start delay
-            15 // 15 total months
+            12000000 * decimals,
+            1500,
+            607,
+            0,
+            15
         );
 
         vestingSchedules[1] = VestingSchedule(
-            12000000 * decimals, // 12,000,000 tokens
-            1500, // 15% initial unlock
-            772, // ~7.72% monthly distribution
-            0, // 0 months start delay
-            12 // 12 total months
+            12000000 * decimals,
+            1500,
+            772,
+            0,
+            12
         );
 
         vestingSchedules[2] = VestingSchedule(
-            12000000 * decimals, // 12,000,000 tokens
-            1500, // 15% initial unlock
-            1062, // ~10.62% monthly distribution
-            0, // 0 months start delay
-            9 // 9 total months
+            12000000 * decimals,
+            1500,
+            1062,
+            0,
+            9
         );
 
         vestingSchedules[3] = VestingSchedule(
-            26690910 * decimals, // 26,690,910 tokens
-            0, // 0% initial unlock
-            1000, // ~10% monthly distribution
-            2, // 1 months start delay
-            12 // 12 total months (10 months vesting + 2 month delay)
+            26690910 * decimals,
+            0,
+            1000,
+            2,
+            12
         );
 
         vestingSchedules[4] = VestingSchedule(
-            19104000 * decimals, // 19,104,000 tokens
-            0, // 0% initial unlock
-            909, // ~9.09% monthly distribution
-            1, // 1 months start delay
-            12 // 12 total months (11 months vesting + 1 month delay)
+            19104000 * decimals,
+            0,
+            909,
+            1,
+            12
         );
 
         vestingSchedules[5] = VestingSchedule(
-            100000 * decimals, // 100,000 tokens
-            400, // 4% initial unlock
-            872, // ~8.72% monthly distribution
-            0, // 0 months start delay
-            12 // 12 total months (12 months vesting)
+            100000 * decimals,
+            400,
+            872,
+            0,
+            12
         );
 
         vestingSchedules[6] = VestingSchedule(
-            39166800 * decimals, // 39,166,800 tokens
-            0, // 0% initial unlock
-            212, // ~2.12% monthly distribution
-            1, // 1 months start delay
-            48 // 48 total months (47 months vesting + 1 month delay)
+            39166800 * decimals,
+            0,
+            212,
+            1,
+            48
         );
 
         vestingSchedules[7] = VestingSchedule(
-            69000000 * decimals, // 69,000,000 tokens
-            0, // 0% initial unlock
-            500, // ~5% monthly distribution
-            4, // 4 months start delay
-            24 // 24 total months (20 months vesting + 4 month delay)
+            69000000 * decimals,
+            0,
+            500,
+            4,
+            24
         );
     }
 
