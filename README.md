@@ -19,3 +19,15 @@ SCOMP is the native governance token of Stablecomp and has a limited supply of 2
 **Primary Chain:** Ethereum
 
 **Secondary Chain:** Polygon
+
+## Contract Addresses
+
+#### Ethereum
+
+**SCOMP Token:** [0xd94A8f9caeD25E63eCc90EDfefAf3635eA1e182a](https://etherscan.io/token/0xd94A8f9caeD25E63eCc90EDfefAf3635eA1e182a)
+
+**Scomp Vesting:** [0xFE3dFC399Cc094583259D661aa8D41f9EE381396](https://etherscan.io/address/0xFE3dFC399Cc094583259D661aa8D41f9EE381396)
+
+#### Polygon
+
+**SCOMP Token:** [0xd94A8f9caeD25E63eCc90EDfefAf3635eA1e182a](https://polygonscan.com/token/0xd94A8f9caeD25E63eCc90EDfefAf3635eA1e182a)
