@@ -1,3 +1,14 @@
+/**
+ * @title ScompVesting
+ * @notice Vesting of SCOMP tokens
+ *  ____  _        _     _
+ * / ___|| |_ __ _| |__ | | ___  ___ ___  _ __ ___  _ __
+ * \___ \| __/ _` | '_ \| |/ _ \/ __/ _ \| '_ ` _ \| '_ \
+ *  ___) | || (_| | |_) | |  __/ (_| (_) | | | | | | |_) |
+ * |____/ \__\__,_|_.__/|_|\___|\___\___/|_| |_| |_| .__/
+ *                                                 |_|
+ */
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -208,5 +219,9 @@ contract ScompVesting is Ownable {
 
     function getContractTokenBalance() external view returns (uint256) {
         return scomp.balanceOf(address(this));
+    }
+
+    function withdrawTokens(address token, uint256 amount) external onlyOwner {
+        ERC20(token).safeTransfer(msg.sender, amount);
     }
 }
