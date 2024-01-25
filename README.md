@@ -28,6 +28,24 @@ SCOMP is the native governance token of Stablecomp and has a limited supply of 2
 
 **Scomp Vesting:** [0xFE3dFC399Cc094583259D661aa8D41f9EE381396](https://etherscan.io/address/0xFE3dFC399Cc094583259D661aa8D41f9EE381396)
 
+**Scomp Foundation Vesting:** [0xE74c4EbF6E88f3B98aA74b34aAf9271055aA320c](https://etherscan.io/address/0xE74c4EbF6E88f3B98aA74b34aAf9271055aA320c)
+
 #### Polygon
 
 **SCOMP Token:** [0xd94A8f9caeD25E63eCc90EDfefAf3635eA1e182a](https://polygonscan.com/token/0xd94A8f9caeD25E63eCc90EDfefAf3635eA1e182a)
+
+## Token Distribution
+
+For more information about the token distribution, please refer to the [Tokenomics](https://stablecomp.gitbook.io/stablecomp/usdscomp/token-distribution) page.
+
+#### Montly Distribution
+
+<div align="center">
+    <img src="img/monthly.svg" alt="Montly Distribution" style="max-width: 1024px;" />
+</div>
+
+#### Total Distribution
+
+<div align="center">
+    <img src="img/total.svg" alt="Total Distribution" style="max-width: 1024px;" />
+</div>
